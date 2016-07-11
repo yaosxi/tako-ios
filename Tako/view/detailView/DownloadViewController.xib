@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DownloadViewController">
+            <connections>
+                <outlet property="tableview" destination="PGT-Aj-tOS" id="q1P-dq-3bf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PGT-Aj-tOS">
+                    <rect key="frame" x="0.0" y="30" width="600" height="570"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="06E-xd-5nH"/>
+                        <outlet property="delegate" destination="-1" id="flm-Sa-Pet"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    安装提示：已安装的应用，建议先删除再安装~" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpx-s0-1VY">
+                    <rect key="frame" x="0.0" y="63" width="600" height="37"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Cqt-Nb-Rsv"/>
+                        <constraint firstAttribute="height" constant="100" id="Kk8-aX-EzD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.402657985" blue="0.37653824899999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Kk8-aX-EzD"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tpx-s0-1VY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9Nd-7d-AeG"/>
+                <constraint firstItem="PGT-Aj-tOS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="EDd-5l-Gx5"/>
+                <constraint firstAttribute="trailing" secondItem="tpx-s0-1VY" secondAttribute="trailing" id="H0A-Le-oMf"/>
+                <constraint firstItem="tpx-s0-1VY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="63" id="J6w-dG-hA1"/>
+                <constraint firstAttribute="trailing" secondItem="PGT-Aj-tOS" secondAttribute="trailing" id="Uu1-nZ-uxt"/>
+                <constraint firstItem="tpx-s0-1VY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xqf-aM-yb6"/>
+                <constraint firstItem="tpx-s0-1VY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="Yak-O6-aCO"/>
+                <constraint firstAttribute="bottom" secondItem="PGT-Aj-tOS" secondAttribute="bottom" id="Z7S-9x-hZ7"/>
+                <constraint firstItem="PGT-Aj-tOS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c6F-oS-QoE"/>
+                <constraint firstAttribute="trailing" secondItem="tpx-s0-1VY" secondAttribute="trailing" id="jc3-8d-Z0e"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Xqf-aM-yb6"/>
+                    <exclude reference="Yak-O6-aCO"/>
+                    <exclude reference="jc3-8d-Z0e"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
